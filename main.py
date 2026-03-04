@@ -6,12 +6,12 @@ import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 from matplotlib.patches import Patch
 
-IMAGE_PATH = "gradient.png"
+IMAGE_PATH = "images_lab1/gradient.png"
 
 def main():
     img_bgr = cv2.imread(IMAGE_PATH, cv2.IMREAD_COLOR)
     img = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2GRAY)
-    cv2.imwrite("grayscale_input1_no_shadow.png", img)
+    cv2.imwrite("images_lab1/grayscale_input1_no_shadow.png", img)
     img_rgb = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2RGB)
     
     H, W = img.shape
